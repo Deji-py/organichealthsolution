@@ -8,35 +8,37 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className=" p-3 w-full h-screen  overflow-hidden">
-      <div className=" flex flex-col h-full rounded-xl text-center justify-start items-center  p-3">
-        <div className="py-2">
-          <h2 className="font-bold animate-charcter">TRENDING</h2>
-          <h1 className=" font-bold text-2xl my-3 px-10 ">
-            Permanent Natural Cure For All Forms Of Ulcers
-          </h1>
-          <div className="flex flex-row justify-center items-center gap-2">
-            <MdOutlineStar size={15} color="orange" />
-            <MdOutlineStar size={15} color="orange" />
-            <MdOutlineStar size={15} color="orange" />
-            <MdOutlineStar size={15} color="orange" />
-            <MdOutlineStar size={15} color="orange" />
+    <div className=" p-3 w-full md:h-screen  overflow-hidden">
+      <div className=" flex md:flex-col flex-row  h-full rounded-xl text-center justify-start items-center  p-3">
+        <div className="w-[50%] md:w-full">
+          <div className="py-2">
+            <h2 className="font-bold animate-charcter">TRENDING</h2>
+            <h1 className=" font-bold md:text-2xl text-[3rem] my-3 px-10  ">
+              Permanent Natural Cure For All Forms Of Ulcers
+            </h1>
+            <div className="flex flex-row justify-center items-center gap-2">
+              <MdOutlineStar size={15} color="orange" />
+              <MdOutlineStar size={15} color="orange" />
+              <MdOutlineStar size={15} color="orange" />
+              <MdOutlineStar size={15} color="orange" />
+              <MdOutlineStar size={15} color="orange" />
+            </div>
           </div>
-        </div>
-        <p className="text-sm my-5">
-          <span className="font-bold underline">GI Vital Softgel</span> is one
-          of the best proven & effective cures for all ulcers such as gastric
-          reflux, Helicobacter pylori, Duodenal Ulcer, Gastric Atrophy and other
-          Gastrointestinal Disorders.
-        </p>
+          <p className="text-sm my-5">
+            <span className="font-bold underline">GI Vital Softgel</span> is one
+            of the best proven & effective cures for all ulcers such as gastric
+            reflux, Helicobacter pylori, Duodenal Ulcer, Gastric Atrophy and
+            other Gastrointestinal Disorders.
+          </p>
 
-        <div className="flex flex-row mt-3 justify-center gap-3 items-center">
-          <Link href={"/product/gi-vital-softgel"}>
-            <button className="btn shadow-none bg-[#032127] text-white">
-              <FaShoppingCart size={20} />
-              Order Product
-            </button>
-          </Link>
+          <div className="flex flex-row mt-3 cursor-pointer justify-center gap-3 items-center">
+            <Link href={"/product/gi-vital-softgel"}>
+              <button className="btn shadow-none bg-[#032127] text-white">
+                <FaShoppingCart size={20} />
+                Order Product
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="flex flex-1 flex-row  justify-center items-start pt-10 relative">
           <Image

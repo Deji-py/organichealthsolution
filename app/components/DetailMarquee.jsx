@@ -11,7 +11,7 @@ function DetailMarquee() {
       </div>
       <div className=" gap-2 ml-10 flex flex-row justify-start items-center">
         <FaPhone />
-        <p>(+233) 0546349695 / 0201720832</p>
+        <p>(+233) 0593965054 / 0201720832</p>
       </div>
     </Marquee>
   );

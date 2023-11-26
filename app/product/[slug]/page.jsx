@@ -74,7 +74,7 @@ function ProductPage() {
   };
 
   return (
-    <div className="w-full p-3  overflow-y-scroll overflow-hidden ">
+    <div className="w-full p-3 max-w-[600px]  overflow-y-scroll overflow-hidden ">
       <div className="text-sm breadcrumbs">
         <ul>
           <li>
@@ -146,7 +146,7 @@ function ProductPage() {
         {ProductInCart ? (
           <button
             onClick={removeItemFromCart}
-            className="btn  w-full  bg-gray-200 text-black"
+            className="btn  w-full  max-w-[600px]  bg-gray-200 text-black"
           >
             Remove From Cart
             <BsX size={20} />
@@ -154,7 +154,7 @@ function ProductPage() {
         ) : (
           <button
             onClick={addItemToCart}
-            className="btn  w-full   bg-[#032127] text-[#04D585]"
+            className="btn  w-full  max-w-[600px]  bg-[#032127] text-[#04D585]"
           >
             Add to Cart
             <FaCartPlus size={20} />

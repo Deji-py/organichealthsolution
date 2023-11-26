@@ -26,14 +26,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="max-w-[600px] w-full">
+    <main className="max-w-[1200px] bg-white  md:w-full">
       <Hero />
       <Perks />
 
       <h1 className={"text-2xl font-bold text-center mt-20 mb-5"}>
         Featured Products
       </h1>
-      <div className="grid p-3 grid-cols-2 gap-3 ">
+      <div className="grid p-3 md:grid-cols-2 grid-cols-3 md:gap-3 gap-5 ">
         {data?.map((product, index) => (
           <Link key={index} href={"/product/" + product.slug.current}>
             <ProductCard product={product} />

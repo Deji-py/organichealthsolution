@@ -36,8 +36,8 @@ function Perks() {
   ];
   return (
     <>
-      <Image src={wave} className="w-full -mt-60" />
-      <div className=" -mt-10 bg-[#f4f9f8] py-10">
+      <Image src={wave} className="w-full md:block hidden  md:-mt-60" />
+      <div className=" md:-mt-10 mt-10  bg-[#f4f9f8] py-10">
         <div className="text-center flex flex-col justify-center items-center gap-3 font-bold text-2xl px-10">
           <Image src={logo} className="w-[150px]" />
           <h1 className="my-5 ">
