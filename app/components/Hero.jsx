@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineStar } from "react-icons/md";
-import softgel from "../../public/softgel.png";
+import softgel1 from "../../public/softgel1.jpeg";
+import softgel2 from "../../public/softgel2.jpeg";
 import best from "../../public/best.png";
 import { FaWhatsapp, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
@@ -44,23 +45,12 @@ function Hero() {
           <Image
             src={best}
             alt="image1"
-            className="w-20 z-[1000] top-5  rotate-12 right-5 absolute"
+            className="w-20 z-[1000] top-0  rotate-12 right-5 absolute"
           />
-          <Image
-            src={softgel}
-            alt="image1"
-            className="h-[250px] translate-x-10 opacity-[0.5]"
-          />
-          <Image
-            src={softgel}
-            alt="image1"
-            className=" object-contain h-[300px] absolute z-[800]"
-          />
-          <Image
-            src={softgel}
-            alt="image1"
-            className=" h-[250px] -translate-x-10 opacity-[0.5]"
-          />
+          <div className="grid grid-cols-2 ">
+            <Image src={softgel1} alt="image1" className="" />
+            <Image src={softgel2} alt="image1" className="" />
+          </div>
         </div>
       </div>
     </div>
